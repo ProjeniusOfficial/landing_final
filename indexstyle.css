@@ -1,0 +1,228 @@
+/* ---------- RESET ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- PARTICLE CANVAS ---------- */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0b0b0b;          /* deep black backdrop */
+  z-index: -1;                  /* keep it behind main content */
+}
+
+/* ---------- LAYOUT ---------- */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-bottom: 1.75rem;
+}
+
+#countdown {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00ffc3;
+  margin-bottom: 1.25rem;
+}
+
+#waitlist {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ---------- BUTTON ---------- 
+#subscribe-btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background: #00ffc3;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#subscribe-btn:hover {
+  transform: scale(1.05);
+}*/
+
+#subscribe-btn  {
+    background: linear-gradient(135deg, #00ffe0, #00ff94);
+  color: #000;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 4px #00ffe0, 0 0 8px #00ff94; /* Reduced glow */
+}
+
+#subscribe-btn:hover {
+   background: linear-gradient(135deg, #00ff94, #00ffe0);
+  box-shadow: 0 0 8px #00ffe0, 0 0 12px #00ff94; /* Slight increase on hover */
+  transform: scale(1.05);
+}
+
+
+/* ---------- SOCIAL SECTION ---------- */
+.social-section {
+  margin-top: 2.5rem;
+}
+
+.social-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.social-link img {
+  width: 28px;
+  height: 28px;
+  filter: invert(100%);
+  transition: transform 0.2s ease;
+}
+
+
+.social-label {
+  font-size: 0.9rem;
+  color: #00ffc3;
+  margin-top: 6px;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-link:hover .social-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SweetAlert2: Popup Box */
+.swal2-popup {
+  border-radius: 18px !important;
+  padding: 2.5rem 2rem !important;
+  background: #fff !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25) !important;
+  animation: popupFade 0.4s ease-in-out;
+}
+
+/* Title (e.g., You're on the list!) */
+.swal2-title {
+  font-size: 1.8rem !important;
+  color: #333 !important;
+  margin-bottom: 10px !important;
+}
+
+/* Content/Message Text */
+.swal2-html-container {
+  font-size: 1rem !important;
+  color: #555 !important;
+  margin: 0 !important;
+}
+
+/* Success Icon */
+.swal2-icon.swal2-success {
+  border-color: #4caf50 !important;
+  color: #4caf50 !important;
+}
+
+/* Tick inside the success icon */
+.swal2-success-circular-line-left,
+.swal2-success-circular-line-right,
+.swal2-success-fix {
+  background-color: #fff !important;
+}
+
+.swal2-success-line-tip,
+.swal2-success-line-long {
+  background-color: #4caf50 !important;
+}
+
+/* Confirm Button */
+.swal2-confirm {
+  background-color: #6c63ff !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  font-size: 1rem !important;
+  border-radius: 10px !important;
+  padding: 10px 24px !important;
+  transition: 0.3s ease !important;
+}
+
+.swal2-confirm:hover {
+  background-color: #5548d3 !important;
+  transform: scale(1.05);
+}
+
+/* Optional: Entry Animation */
+@keyframes popupFade {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+} 
+
+.highlight-pro {
+  color: #00ffc3; /* Bright neon green (match particle color or use any you like) */
+  font-weight: bold;
+}
+
+
+
+
+
+

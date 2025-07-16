@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projenius – Coming Soon</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="indexstyle.css" />
+
+    <!-- SweetAlert2 (popup gift) -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Firebase compat (unchanged – keep your own keys in script.js) -->
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+
+    <!-- particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 🟢 Particle canvas (stays behind everything) -->
+    <div id="particles-js"></div>
+
+    <!-- 🏗️  Main landing content -->
+    <main class="container">
+       
+      <h1><span class="highlight-pro">Projenius</span> is Launching<span class="highlight-pro"> Soon!</span></h1>
+
+
+      <div id="countdown"></div>
+
+      <p id="waitlist">
+        <span id="people">--</span> people are waiting! 🚀
+      </p>
+
+      <button id="subscribe-btn">Subscribe 🎉</button>
+      <!-- 🌐 Social Media Links -->
+<!-- 🌐 Follow Us (Icons Only, Hover Reveals Name) -->
+<div class="social-section">
+  <p>Follow us</p>
+  <div class="social-icons">
+    <a href="https://instagram.com/projenius_" target="_blank" class="social-link instagram">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram" />
+      <span class="social-label">Instagram</span>
+    </a>
+    <a href="https://wa.me/918925450473" target="_blank" class="social-link whatsapp">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" alt="WhatsApp" />
+      <span class="social-label">WhatsApp</span>
+    </a>
+    <a href="https://youtube.com/@projenius-" target="_blank" class="social-link youtube">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" alt="YouTube" />
+      <span class="social-label">YouTube</span>
+    </a>
+    <a href="https://github.com/PROJENIUS?tab=repositories" target="_blank" class="social-link github">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" />
+      <span class="social-label">GitHub</span>
+    </a>
+  </div>
+</div>
+
+
+    </main>
+
+    <!-- Your existing JS logic (countdown, Firebase, SweetAlert) -->
+    <script src="indexscript.js"></script>
+
+    <!-- 🔮  Inline particle configuration -->
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 55, density: { enable: true, value_area: 800 } },
+          color: { value: "#00ffc3" },
+          shape: { type: "circle" },
+          opacity: { value: 0.25, random: true },
+          size: { value: 3, random: true },
+          line_linked: {
+            enable: true,
+            distance: 140,
+            color: "#00ffc3",
+            opacity: 0.2,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 1.5,
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out",
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: false },
+          },
+          modes: {
+            grab: { distance: 180, line_linked: { opacity: 0.4 } },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>
