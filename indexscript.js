@@ -1,5 +1,5 @@
 const countdownEl = document.getElementById("countdown");
-const launchDate = new Date("2025-07-22T05:00:00+05:30").getTime();
+const launchDate = new Date("2025-07-22T17:30:00+05:30").getTime();
 
 function updateCountdown() {
   const now = Date.now();
